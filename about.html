@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关于我 · 林小白的博客</title>
+<link rel="stylesheet" href="css/style.css">
+<script>
+  (function () {
+    var saved = localStorage.getItem('theme');
+    var dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', saved || (dark ? 'dark' : 'light'));
+  })();
+</script>
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">小白<span>.</span></a>
+    <nav class="nav">
+      <a href="index.html">首页</a>
+      <a href="about.html" class="active">关于</a>
+      <a href="post.html">文章</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+      <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+    </button>
+  </div>
+</header>
+
+<main class="container">
+  <article class="article fade-in">
+    <h1>关于我</h1>
+    <p>你好，我是林小白。一个正在学习前端、喜欢写字、偶尔折腾点小项目的普通人。</p>
+    <p>这个博客是我用 HTML 和 CSS 手写出来的，没有用任何框架。我希望它能保持简单、干净、加载快。</p>
+    <h2>我在做什么</h2>
+    <p>目前主要在学习 JavaScript 和浏览器原理，同时在练习把学到的知识写成文章。写作对我来说，是检验自己有没有真正理解一件事的最好方式。</p>
+    <h2>联系我</h2>
+    <p>如果你对我的文章有任何想法，欢迎发邮件到 <a href="mailto:hello@example.com">hello@example.com</a>，或者在我的 GitHub 上留言。</p>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 林小白 · 用心记录每一天</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
